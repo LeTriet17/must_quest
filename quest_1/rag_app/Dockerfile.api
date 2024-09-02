@@ -1,0 +1,16 @@
+FROM python:3.11-slim as builder
+
+RUN apt-get update && apt-get install -y libgl1-mesa-glx
+RUN apt-get update && apt-get install -y nginx
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /.cache/
+
+WORKDIR /app
+
+COPY nginx.api.conf /etc/nginx/nginx.conf
+
+COPY . .
+RUN rm -rf ./chatchat_server/chatchat/data
+RUN pip install -r requirements_api.txt && pip uninstall -y llama_parse
+
+EXPOSE 80
+ENTRYPOINT ["sh", "run.sh"]
