@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "80:80"
+      - "7861:7861"
+    volumes:
+      - ./chatchat_server:/app/chatchat_server
+      - ./config:/app/config
+    network_mode: host
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ui
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./chatchat_server:/app/chatchat_server
+      - ./config:/app/config
+    environment:
+      - APP_ENV=${APP_ENV:-dev}
+    network_mode: host
+
+volumes:
+  chatchat_server:
+  chatchat_ui:
+  config:

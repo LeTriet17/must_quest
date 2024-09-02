@@ -1,0 +1,36 @@
+WER: 64.29
+CER: 31.63
+NORMALIZED WER: 60.0
+NORMALIZED CER: 29.45
+
+
+REF: Hương thu còn thoảng đâu đây bên thềm
+HYP:  Hương Thô gạo thái nào đây vânt thêm
+----------------------------------------------------------------------
+REF: Gió đông lạnh heo may về khắp lối.
+HYP:  Thôi đúng đại hôm nay vì không đối
+----------------------------------------------------------------------
+REF: Sao anh vội về ngay?
+HYP:  Chào anh vọt đi vang hay
+----------------------------------------------------------------------
+REF: Ngày em đi cất nhẹ gót quay về
+HYP:  Nếu em đi gước nhẹ có quay về
+----------------------------------------------------------------------
+REF: Anh đã biết tình kia là không thể
+HYP:  Anh đã biết thì ghi ở lã không thể.
+----------------------------------------------------------------------
+REF: Cây cỏ tỉnh táo
+HYP:  Cây có tình tháo
+----------------------------------------------------------------------
+REF: sự dằn vặt
+HYP:  Sưu sang vật
+----------------------------------------------------------------------
+REF: Vợ tôi cũng bị một chiếc xe như vậy
+HYP:  Vào tối cũng bị một chức xe như vậy
+----------------------------------------------------------------------
+REF: Em không trả lời
+HYP:  em không chả đưa đi
+----------------------------------------------------------------------
+REF: Xã hội phát triển thông tin được cập nhật trên internet liên tục
+HYP:  Sa hỏi phát triển thông tin được gập nhật trên internet link tục.
+----------------------------------------------------------------------
